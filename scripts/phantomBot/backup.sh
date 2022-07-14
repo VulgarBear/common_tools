@@ -53,4 +53,4 @@ sleep 1
 mv "${TWITCH_PATH}/${BOT}_$DATE.tar.gz" "${TWITCH_PATH}/auto_backups"
 
 c_hilight "Backup Completed"
-sleep 1
+echo " "

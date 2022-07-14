@@ -39,3 +39,4 @@ days=$(( ( $(date '+%s') - $(date -d '3 months ago' '+%s') ) / 86400 ))
 find $BACKUP_FOLDER/*.tar.gz -mtime +$days -type f -delete
 
 c_hilight "Cleanup completed..."
+echo " "
