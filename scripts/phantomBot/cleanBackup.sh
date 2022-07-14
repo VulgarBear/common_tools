@@ -6,13 +6,12 @@ set -e
 set -o pipefail
 
 # Variables
-COM_DIR="${HOME}/common_tools"
 TWITCH_PATH="${HOME}/twitch"
 BACKUP_FOLDER="${TWITCH_PATH}/auto_backups"
 
 # Sources
-source "../../utils/color_codes.sh"
-source "../../utils/logging_utils.sh"
+source "$HOME/common_tools/utils/color_codes.sh"
+source "$HOME/common_tools/utils/logging_utils.sh"
 
 traperr() {
 	echo "ERROR: ${BASH_SOURCE[1]} at about ${BASH_LINENO[0]}"
