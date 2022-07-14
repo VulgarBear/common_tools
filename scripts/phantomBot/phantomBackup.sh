@@ -12,8 +12,8 @@ BOT_PATH="${TWITCH_PATH}/${BOT}"
 DATE=`date +%m-%d-%Y`
 
 # Sources
-source $(dirname $0)/utils/color_codes.sh
-source $(dirname $0)/utils/logging_utils.sh
+source $(dirname $0)../../utils/color_codes.sh
+source $(dirname $0)../../utils/logging_utils.sh
 
 traperr() {
 	echo "ERROR: ${BASH_SOURCE[1]} at about ${BASH_LINENO[0]}"
