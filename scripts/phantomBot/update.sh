@@ -60,6 +60,7 @@ fi
 mv "${BOT}-old" "${BOT}_${DATE}"
 tar --exclude="${BOT}_${DATE}/dbbackup" --exclude="${BOT}_${DATE}/lib" --exclude="${BOT}_${DATE}/web" -czf "${BOT}_${DATE}.tar.gz" "${BOT}_${DATE}"
 mv "${BOT}_${DATE}.tar.gz" "install_backups"
+rm -rf "${BOT}_${DATE}"
 
 cd $BOT
 sudo chmod u+x launch-service.sh launch.sh ./java-runtime-linux/bin/java
