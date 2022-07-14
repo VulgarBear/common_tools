@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "../../utils/color_codes.sh"
+source "$HOME/common_tools/utils/color_codes.sh"
 
 set -e
 
