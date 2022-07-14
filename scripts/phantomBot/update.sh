@@ -54,7 +54,7 @@ if [ -d "${TWITCH_PATH}/install_backups" ]; then
 fi
 if [[ ! -d "${TWITCH_PATH}/install_backups" ]]; then
 	mkdir "${TWITCH_PATH}/install_backups"
-	c_success "Created auto_backups folder."
+	c_success "Created install_backups folder."
 fi
 
 mv "${BOT}-old" "${BOT}_${DATE}"
