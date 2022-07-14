@@ -7,7 +7,6 @@ set -o pipefail
 
 # Variables
 BOT=$1
-TWITCH_PATH="${HOME}/twitch"
 
 
 # Sources
@@ -22,9 +21,9 @@ set -o errtrace
 trap traperr ERR
 
 # SCRIPT START
-c_hilight "Starting $BOT"
+c_hilight "Restarting $BOT"
 
-pm2 start $TWITCH_PATH/$BOT/launch.sh --name "$BOT"
+pm2 restart $BOT
 
-c_hilight "Started $BOT with pm2"
+c_hilight "Restarted $BOT with pm2"
 echo " "
