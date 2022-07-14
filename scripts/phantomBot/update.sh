@@ -63,7 +63,7 @@ mv "${BOT}_${DATE}.tar.gz" "install_backups"
 
 cd $BOT
 sudo chmod u+x launch-service.sh launch.sh ./java-runtime-linux/bin/java
-sleep1
+sleep 1
 
 c_info "Starting $BOT"
 pm2 start $BOT
