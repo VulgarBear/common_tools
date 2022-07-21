@@ -1,3 +1,6 @@
 {
-  "conventionalCommits.scopes": ["PhantomBot"]
+  "conventionalCommits.scopes": [
+    "PhantomBot",
+    "docker"
+  ]
 }
